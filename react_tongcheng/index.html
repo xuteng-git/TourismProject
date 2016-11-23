@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta content="no-transform" http-equiv="Cache-Control">
+	<title>申请退款</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/applyrefund.css"  />
+    <script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body class="bgwhite">
+	<div class="headr">
+		<ul>
+			<li class="bottom_selected">
+                <i class="feiji"></i> 飞机票</li>
+                <li><i class="hotel"></i> 酒店</li>
+                <li><i class="visa"></i> 签证</li>
+            </ul>	
+        </div>
+        <div class="headr_title">
+          <div class="title">
+             <i></i>【人人都有红包】获取2张全国免费机票任性飞！
+         </div>
+     </div>
+     <div class="banner">
+        <div class="swiper-container"  >
+            <div class="swiper-wrapper"  >
+                <div class="swiper-slide" >
+                    <img src="image/img4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/img3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/img2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/img1.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="information">
+        <div class="information-one">
+            <span id="trip" class="centerinformation bottom_selected">去程</span>
+            <span id="back" class="centerinformation">返程</span>
+        </div>
+        <div class="information-two">
+            <span class="leftinformation fontSizeOne">出发地</span>
+            <span class="rightinformation fontSizeOne">到达地</span>
+        </div>
+        <div class="information-therr">
+            <span class="leftinformation"><a href="selectCity.html?type=1" id="tripCity">香港</a></span>
+            <div  class="centerinformation"><img id="img" src="image/wangfan.png"></div> 
+            <span class="rightinformation"><a href="selectCity.html?type=2" id="backCity">东京</a></span>
+        </div>
+      <div class="information-one">
+        <a href="selectDate.html" class="leftinformation" id="triptime"></a>
+        <a href="selectDate.html" class="rightinformation" id="backtime" style="visibility: hidden"></a>
+      </div> 
+		<!--<div class="information-two">
+			<span class="leftinformation">学生票</span>
+			<span class="rightinformation"><input type="checkbox" class="ck"/></span>
+		</div>-->
+		<div class="information-four">
+			<div class="feiji-select">飞机票查询</div>
+		</div>
+		<div class="information-five">
+			<ul>
+				<li><i class="online"></i><span>在线选座</span></li>
+				<li><i class="sendticket"></i><span>送票上门</span></li>
+				<li><i class="car"></i><span>专车接送</span></li>
+				<li><i class="panicbuying"></i><span>抢票</span></li>
+			</ul>
+		</div>
+	</div>
+    <div class="informationmore">
+        <div class="more"><span>全程预定保障</span></div>
+        <div style="display: none;">
+           <ul>
+               <li>产品</li>
+               <li>产品</li>
+               <li>产品</li>
+           </ul>
+       </div>
+   </div>
+   <div class="foot">
+    <ul>
+        <li>
+            <a href="#"><span><img src="image/home2.png"></span><span style="color:#0eaf52">首页</span></a>
+        </li>
+        <li style="position:relative;">
+            <a href="#"><span><img src="image/tourism1.png"></span><span>旅行</span></a>
+        </li>
+        <li>
+            <a href="#"><span><img src="image/trip1.png"></span><span>行程</span></a>
+        </li>
+        <li>
+            <a href="#"><span><img src="image/my1.png"></span><span>我的</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/tongcheng.js"></script>
+<script>
+    /*轮播图*/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop:true
+    });
+</script>
