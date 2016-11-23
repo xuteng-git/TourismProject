@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{height:100%;}
+* { padding: 0; margin: 0; list-style: none; font-weight: normal; }
+a { color: #000;text-decoration: none; }
+
+.bgwhite{background:#E6E6E6;}
+.time{color: black;font-family:"微软雅黑";}
+.fontSizeOne{ font-size:0.33rem;}
+.fontSizeTwo{ font-size:0.88rem;}
+.border-bottom {border-bottom: solid 1px #f1f1f1;}
+.height{height:2.8rem;}
+.bottom_selected{border-bottom: solid 2px #0eaf52;color: #09BB07; }
+ 
+
+/* 头部 */
+.headr{width: 100%;height: 2.8rem;background:#fff;box-shadow: 1px 1px 10px #fff;position:fixed;top:0px;z-index:999;}
+.headr ul {padding: 0px; margin: 0px;text-align: center; }
+.headr ul li{display: inline-block;line-height: 2.8rem;font-family:"微软雅黑"; font-size:1.1rem; font-weight:bold;width:30%;text-align: center;}
+.headr .feiji{width:17px;height: 17px;display:inline-block; background: url(../image/feiji2.png) no-repeat 0 0; background-size:contain; vertical-align: middle;}
+.headr .hotel{width:20px;height:20px;display:inline-block; background: url(../image/hotel1.png) no-repeat 0 0; background-size:contain; vertical-align: -0.27rem;}
+.headr .visa{width:19px;height: 19px;display:inline-block; background: url(../image/visa1.png) no-repeat 0 0; background-size:contain; vertical-align: middle;}
+
+/* 任性飞 */
+.headr_title{width:100%;height:2.35rem;font-family:"微软雅黑"; font-size:0.7rem; background: #fff7dc;text-align: left;color:#977f56;margin-top: 3.4rem;display: flex;top:0px;}
+.headr_title .title{width: 100%;margin:0.65rem 0.7rem;}
+.headr_title .title i{ width:15px;height: 15px;display:inline-block; background: url(../image/xiaolaba.png) no-repeat 0 0; background-size:contain; vertical-align: middle; }
+
+/* banner图 */
+.banner{width:100%;padding: 0px;margin: 0px; }
+.banner img{width:100%;background-size: contain;}
+ 
+
+/* 筛选项开始 */
+.information{width:100%;background:#fff;padding: 0px;margin: 0px;color:gray;}
+
+/* 出发日期 */
+.information-one{width: 95%;height:3rem;margin:auto;display:flex;border-bottom: solid 1px #f1f1f1; }
+.information-one span{display:inline-block;padding: 0px;line-height: 3rem;font-size:0.88rem; }
+.information-one .leftinformation{width:49%;text-align: left;margin: auto;}
+.information-one .rightinformation{width:50%;text-align: right;margin: auto;}
+.information-one .centerinformation{width:50%;text-align: center;}
+
+/* 出发地和学生票 */
+.information-two{width: 95%;height:2.4rem;margin:auto;display:flex;}
+.information-two span{display:block;line-height: 2.8rem; }
+.information-two .leftinformation{width:49%;text-align: left;}
+.information-two .rightinformation{width:50%;text-align: right;}
+.information-two .ck { border-radius: .30rem;-webkit-appearance: none; width: 1.35rem; height: 1.35rem;  border: .02rem solid #DDD8CE;padding: 0;margin:0.7rem auto;}
+
+/* 学生票+查询 */
+.information-therr{width: 95%;height:3.3rem;margin:auto;display:flex;border-bottom: solid 1px #f1f1f1;line-height:2.5rem; position: relative;}
+.information-therr .leftinformation{width:33.3%;text-align: left;font-size:1.45rem;color:black;display: block;position: absolute;}
+.information-therr .rightinformation{width:33.3%;text-align: right;font-size:1.45rem; color:black;display: block;position: absolute;right: 0px;}
+.information-therr .centerinformation{width:33.3%; margin:auto;text-align: center;}
+.information-therr .tL{ text-align: left;}
+.information-therr .tR{ text-align: right;}
+/* 查询按钮 */
+.information-four{width: 98%;height:5rem;margin:auto;display:flex;border-bottom: solid 1px #f1f1f1;line-height:3.5rem;}
+.information-four .feiji-select{ width:100%; height:2.7rem;border-radius: 0.4rem; background:#09BB07; line-height:2.7rem; text-align:center; color:#fff; font-size:0.96rem;margin:1.2rem auto;font-family:"微软雅黑";}
+
+/* 在线选座 */
+.information-five{width: 98%;height:5rem;margin:auto;display:flex;border-bottom: solid 1px #f1f1f1;line-height:3.5rem;}
+.information-five span{font-size:0.8rem;font-family:"细明体 MingLiU";color:#666666;}
+.information-five ul { width: 98%;height:5rem;padding: 0px; margin: 0px;} 
+.information-five ul li {display:block; float: left; width: 25%; line-height: 2rem;text-align: center;line-height: 1.5rem;margin-top: 0.65rem;}
+/* 在线选座图标 */
+.information-five .online{width:35px;height: 35px;display:block; margin: auto; line-height: 0.8rem;
+    font-size: 0.5rem;background: url(../image/online.png) no-repeat 0 0; background-size:contain; vertical-align: middle}
+.information-five .sendticket{width:35px;height: 35px;display:block; margin: auto; line-height: 0.8rem;font-size: 0.5rem;background: url(../image/songpiao.png) no-repeat 0 0; background-size:contain; vertical-align: middle;}
+.information-five .car{width:35px;height: 35px;display:block; margin: auto; line-height: 0.8rem;font-size: 0.5rem;background: url(../image/car.png) no-repeat 0 0; background-size:contain; vertical-align: middle;}
+.information-five .panicbuying{width:35px;height: 35px;display:block; margin: auto; line-height: 0.8rem;font-size: 0.5rem;background: url(../image/panicbuying.png) no-repeat 0 0; background-size:contain; vertical-align: middle;}
+
+/*更多产品列表*/
+.informationmore{width: 98%; height:auto; margin:auto; }
+.informationmore .more{text-align:center;color:gray;font-size:0.5rem;line-height:2.8rem; }
+
+/*底部导航*/
+.foot { background:#fff;padding: 0.3rem 0 0 0; width: 100%; position: fixed; left: 0; bottom: 0; }
+.foot ul { height: 0px; }
+.foot ul li { float: left; width: 25%; text-align: center; list-style-type: none; margin: 0px; padding: 0px; }
+.foot ul li img{height:30px;background-size:contain}
+.foot ul li span { display: block; color: #666666; font-size:0.82rem; font-family: "微软雅黑"; line-height: 1.2rem; }
+
+/*----------------------------------选择城市页面开始-------------------------------------------------------------------*/
+.visibilityhidden{visibility:hidden}
+
+/*搜索框*/
+.box-search{width:100%;height:6rem; background:#fff;position:fixed;top:0px;}
+.box-search .search{width:92%;height:2rem;border-radius: 0.4rem;background:#e6e6e6;margin:1rem auto;}
+.box-search .search i{width:20px;height:20px; position:absolute; background: url(../image/magnifier.png) no-repeat 0 0; background-size:contain;margin:0.3rem 0.5rem}
+.box-search .search input{ width:84%;height:100%;margin-left:2.6rem;background:#e6e6e6;outline:none;border:none;}
+/*搜索框下Tab*/
+.box-search .searchtab{width:100%; height:1rem; border:1px solid #fff; text-align:center; color:#0eaf52;}
+
+/*热门城市+历史选择*/
+.city{width:99%; height:15rem;margin: 6.5rem auto;top:0px;}
+.citylist{width:92%;margin:auto;}
+.citylist dt{height:2rem;width:100%;font-size:1rem; }
+.citylist dl{height:3rem;width:100%;display:flex;margin:auto}
+.citylist dl span{width:30%;height:2rem;display:block;float:left; text-align:center;
+background:#fff;line-height:2.1rem;margin:auto;border-radius: 0.2rem;font-size:0.9rem;}
+
+/*字母城市*/
+.lettercity{width:99%;background: #fff;margin-top: 1rem;}
+.lettercity dt{height:2.7rem;width:100%;background:rgb(248,248,248);border-bottom: solid 2px rgb(233,233,233); line-height:2.9rem;padding-left: 1rem; }
+.lettercity dl{height:3rem;width:100%;background:#fff;border-bottom: solid 2px rgb(212,212,212); margin-left: 1rem; line-height:3.2rem;display: block;font-size:0.9rem;}
+
+
+/*-----------------------------------------选择日期---------------------------------------*/
+.box-date{width:100%;height:2.4rem; background:#fff;background:rgb(85,106,114);position: fixed;top: 0px;}
+
+.date-title{width:92%;height:2.3rem; margin:auto;}
+.date-title ul li { float: left; width: 14.28%; text-align: center; list-style-type: none; margin: 0px; padding: 0px;line-height:2.3rem;color:#fff }
+.date-title ul li:first-child{color:#0eaf52}
+.date-title ul li:last-child{color:#0eaf52}
+
+.date-list{width:100%;height:18rem; background:#fff;}
+.date-list .title{height:1.9rem;text-align:center;line-height:1.85rem; background:#F2F5F7}
+.date-list .content{width:92%;height:2.3rem; }
+.date-list ul li { float: left; width: 14.28%;height:50px; text-align: center; list-style-type: none; margin: 0px; padding: 0px;line-height:3.2rem;}
+
+#content{margin-top: 2.5rem;}
+
+.weekend{color:#0eaf52;}
+.today{width:70%;height:50%; color: #0eaf52;font-weight:700;border:1px solid #E7E7E7;line-height:1.5rem;margin:0.75rem auto; background:#E7E7E7;border-radius: 0.3rem;}
+.activity{width:70%;height:50%; color: #fff;font-weight:700;border:1px solid #E7E7E7;line-height:1.5rem;margin:0.75rem auto; background:#0eaf52;border-radius: 0.3rem;}
+.invalid{color:#CFDAED}
+.sign{display:block;width:70%; font-size:small;margin:-1.7rem auto;color:#0eaf52}
+
+/*-position: fixed;top: 0px;----------------------------------------列表页---------------------------------------*/
+
+.box {width:100%;background-color: #39825C;}
+.list-head{height: 5.8rem; width:100%;position: fixed;top:0;z-index: 999; margin:auto;background-color: #39825C;}
+.list-head .title{height:3.8rem;display:flex;}
+/* 左右箭头 */
+.list-head .title .left{height: 25px;width: 25px; background: url(../image/left.png) no-repeat 0 0; background-size:contain;margin-top: 1rem; }
+.list-head .title .right{height: 25px;width: 25px; background: url(../image/right.png) no-repeat 0 0; background-size:contain;margin-top: 1rem; }
+/* 前一天和后一天 */
+.list-head .title .center{width:92%;margin:0.35rem auto;}
+.list-head .title .center ul li { float: left; width: 33%; text-align: center; list-style-type: none; margin: 0px; 
+	padding: 0px;line-height:1.3rem;}
+.list-head .title .center .day{text-align: center;font-size:0.9rem;color:#B0CDBE; }
+.list-head .title .center .money{display:block;width:100%; margin:0 -0.05rem auto;font-size:0.1rem;}
+/* 中间日期 */
+.list-head .title .center .today{border: 1px solid #FFFFFF;border-radius: 0.3rem;background:#FFFFFF;}
+.list-head .title .center .today .day{ color: #5E5959;}
+.list-head .title .center .today .money{color: #FF6633;}
+.list-head .title .center .today .down{height: 16px;width: 16px; display:block;background: url(../image/down.png) no-repeat 0 0; background-size:contain; margin:-0.27rem auto;} 
+
+/* 提示 */
+.list-head .tip{width:97%;margin:auto;display:flex;}
+.list-head .tip .tip1{width: 80%;background-color:#D5B840;line-height: 1.8rem;color: #fff; 
+	font-size:0.78rem;font-family: "微软雅黑";border-top-left-radius:0.4rem;border-bottom-left-radius:0.4rem;}
+.list-head .tip i{height: 32px;width: 32px; display:block;background: url(../image/clock.png) no-repeat 0 0; background-size:contain;position:absolute;margin-top: -0.1rem;} 
+.list-head .tip .tip2{display: block;width: 20%; background-color:#FCFDF7;line-height: 1.8rem;
+	color: #4D5A50; font-size:0.78rem;font-family: "微软雅黑";text-align: center;border-top-right-radius:0.4rem;border-bottom-right-radius:0.4rem;}
+
+/* --------------------机票列表------------------- */
+.big-ticket-list{text-align: center;margin-top: 6rem;margin-bottom: 3rem;}
+.ticket-list{width:97%;margin:0.2rem auto;background: #fff;border-radius: 0.4rem;
+	box-shadow: 0px 3px 1px rgb(238,238,238); display: inline-block; }
+/* 左右时间样式 */
+.ticket-list .one{height:3.5rem;display:flex;}
+.ticket-list .one div{margin-left: 0.5rem;}
+.ticket-list .one .span1{text-align: center;font-size:1.4rem;color:black;font-weight:bold;line-height: 3rem;}
+.ticket-list .one .span2{display:block;margin:-0.55rem -0.05rem auto;text-align: center; 
+	font-size:0.1rem;color: #B2B2B2;}
+/* 左右时间宽度 */
+.ticket-list .one .one1{width: 30%;}
+.ticket-list .one .one3{width: 20%;}
+/* 中间时间 */
+.ticket-list .one .one2{width: 30%;text-align: center;line-height: 3rem;}
+.ticket-list .one .one2 span{text-align: center;font-size:0.1rem;color:#B2B2B2;}
+.ticket-list .one .one2 img{height: 32px;width: 80px; background-size: contain;display:block;margin: -1.7rem auto;}
+/* 含税总价 */
+.ticket-list .one .one4{width: 30%;text-align: center;}
+.ticket-list .one .one4 span{font-size:0.7rem;color:black;line-height: 4rem;}
+
+/* ----------------航空公司信息-------------------- */
+.ticket-list .span3{display:block;height:1.2rem;width:100%; margin:0.25rem auto;text-align:left; font-size:0.1rem;color: #B2B2B2; box-sizing:border-box;padding-left: 1rem; }
+.ticket-list .span3 img{width: 12px;height: 12px;}
+
+/* ----------------机票详细信息-------------------- */
+.ticket-list .two ul li { height:4rem;background: rgb(238,238,238);
+	list-style-type: none; line-height:1.3rem;display: flex;border-bottom:1px dashed rgb(180,180,180);}
+.ticket-list .two .end{border-bottom-left-radius:0.4rem;border-bottom-right-radius:0.4rem;border-bottom:none;}
+/* 右边文字+心 */
+.ticket-list .two .span4{ width: 50%;text-align: left;margin: 1.2rem 1rem auto;
+	color:black;font-family:"仿宋";font-weight: bold;}
+.ticket-list .two .span4 i{height: 16px;width: 16px;background: url(../image/xin.png) no-repeat 0 0; 
+	background-size:contain;position:absolute;margin-top: 0.15rem;} 
+/* 左边价格+剩余票数 */
+.ticket-list .two .ticket-price{width: 30%;margin:auto;}
+.ticket-list .two .ticket-price-box{width: 45%;margin:auto; float: right;}
+.ticket-list .two .ticket-price-box span{display:block;text-align: center;font-size:0.85rem;border: 1px solid red;font-weight:bold;}
+.ticket-list .two .ticket-price-box .price{background: rgb(252,104,41);color:#fff;border-top-left-radius:0.4rem;border-top-right-radius:0.4rem;}
+.ticket-list .two .ticket-price-box .ticket{border-bottom-left-radius:0.4rem;border-bottom-right-radius:0.4rem;color: rgb(252,104,41);}
+/* 左边价格*/
+.ticket-list .two .ticket-price .price-noticket{width: 45%;text-align: center;color:#fff;background: rgb(252,104,41);border-radius:0.4rem;line-height:2rem; float: right;font-size:0.85rem;font-weight:bold;}
+
+/*列表底部导航*/
+.list-foot { background:#fff;padding: 0.3rem 0 0 0; width: 100%; position: fixed; left: 0; bottom: 0; }
+.list-foot ul { height: 0px; }
+.list-foot ul li { float: left; width: 25%; text-align: center; list-style-type: none; margin: 0px; padding: 0px; }
+.list-foot ul li img{height:30px;background-size:contain}
+.list-foot ul li span { display: block; color: #666666; font-size:0.82rem; font-family: "微软雅黑"; line-height: 1.2rem; }
+
+
+
+.box-ticket-screen{width: 97%;height: 10rem;border: 1px solid red;margin:auto;}
+.box-ticket-screen .title{width: 100%;height: 2rem;border: 1px solid red;}
+.box-ticket-screen .where{width: 100%;height: 2rem;border: 1px solid red;}
+.box-ticket-screen .detail{width: 100%;height: 6rem;border: 1px solid red;display: flex;}
+.box-ticket-screen .detail .left{width: 50%;height: 6rem;border: 1px solid red;}
+.box-ticket-screen .detail .right{width: 50%;height: 6rem;border: 1px solid red;}

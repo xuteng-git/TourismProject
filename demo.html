@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta charset="utf-8" />
+<title>
+ 
+</title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+<script language="javascript">
+            $(function(){
+                    $('.btn-right').click(function(){
+                            var box=$(this).parent();  //获取按钮的父元素
+                            var box_next=box.next();   //父元素的下一个同胞元素
+                            var box_next_left=parseInt(box_next.css('left'));      //父元素下一个同胞元素的left值
+                            var box_left=parseInt(box.css('left'));        //父元素的left值
+                            if(box_next_left){
+                                    box.animate({left:box_next_left.toString()});
+                                    box_next.animate({left:box_left.toString()});
+                                    box.insertAfter(box_next);
+                                }
+                             
+                        });
+                         
+                    $('.btn-left').click(function(){
+                            var box=$(this).parent();  //获取按钮的父元素
+                            var box_left=parseInt(box.css('left'));        //父元素的left值
+                            var box_prev=box.prev();   //父元素的上一个同胞元素
+                            var box_prev_left=parseInt(box_prev.css('left'));      //父元素下一个同胞元素的left值
+                            if(box_left){
+                                    box.animate({left:box_prev_left.toString()});
+                                    box_prev.animate({left:box_left.toString()});
+                                    box.insertBefore(box_prev);
+                                }
+                             
+                        });
+                });
+             
+         
+</script>
+<style type="text/css">
+    body {margin:0px;padding:0px;position:relative;}
+    #div-box1 {width:100px;height:100px;background:#f00;border:0px solid #f00;position:absolute;left:0px;}
+    #div-box2 {width:100px;height:100px;background:#999;border:0px solid #00f;position:absolute;left:110px;}
+    #div-box3 {width:100px;height:100px;background:#00f;border:0px solid #00f;position:absolute;left:220px;}
+    #div-box4 {width:100px;height:100px;background:#0f0;border:0px solid #0F0;position:absolute;left:330px;}
+</style>
+</head>
+ 
+<body>
+<div id="div-box1" class="box1">
+    <input type="button" value="向左" class='btn-left' id="btn1-left" />
+    <input type="button" value="向右" class='btn-right' id="btn1-right" >
+</div>
+<div id="div-box2" class="box1">
+    <input type="button" value="向左" class='btn-left' id="btn2-left" />
+    <input type="button" value="向右" class='btn-right' id="btn1-right" >
+</div>
+<div id="div-box3">
+    <input type="button" value="向左" class='btn-left' id="btn3-left" />
+    <input type="button" value="向右" class='btn-right' id="btn3-right" >
+</div>
+<div id="div-box4">
+    <input type="button" value="向左" class='btn-left' id="btn3-left" />
+    <input type="button" value="向右" class='btn-right' id="btn3-right" >
+</div>
+</body>
+ 
+</html>
